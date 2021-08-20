@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'consts.dart';
 
 class AddWord extends StatefulWidget {
   const AddWord({Key? key}) : super(key: key);
@@ -18,14 +19,14 @@ class AddWordState extends State<AddWord> {
             padding: const EdgeInsets.all(16),
             child: TextFormField(
               textInputAction: TextInputAction.next,
-              decoration: InputDecoration(labelText: "Deutsch"),
+              decoration: InputDecoration(labelText: DE),
             ),
           ),
           Padding(
             padding: const EdgeInsets.all(16),
             child: TextFormField(
               textInputAction: TextInputAction.next,
-              decoration: InputDecoration(labelText: "Schwedisch"),
+              decoration: InputDecoration(labelText: SE),
             ),
           )
         ],
