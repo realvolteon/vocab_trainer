@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'word.dart';
 
 void main() {
   runApp(MyApp());
@@ -36,7 +37,10 @@ class _MyHomePageState extends State<MyHomePage> {
       ),
       floatingActionButton: FloatingActionButton(
         child: new Icon(Icons.add),
-        onPressed: () {},
+        onPressed: () {
+          Navigator.push(
+              context, MaterialPageRoute(builder: (context) => AddWord()));
+        },
       ),
     );
   }

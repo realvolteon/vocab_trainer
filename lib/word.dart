@@ -1,13 +1,13 @@
 import 'package:flutter/material.dart';
 
-class Word extends StatefulWidget {
-  const Word({Key? key}) : super(key: key);
+class AddWord extends StatefulWidget {
+  const AddWord({Key? key}) : super(key: key);
 
   @override
-  _WordState createState() => _WordState();
+  AddWordState createState() => AddWordState();
 }
 
-class _WordState extends State<Word> {
+class AddWordState extends State<AddWord> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -29,6 +29,12 @@ class _WordState extends State<Word> {
             ),
           )
         ],
+      ),
+      floatingActionButton: FloatingActionButton(
+        onPressed: () {
+          Navigator.pop(context);
+        },
+        child: new Icon(Icons.save_outlined),
       ),
     );
   }
