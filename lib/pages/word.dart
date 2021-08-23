@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'consts.dart';
+import '../config/consts.dart';
 
 class AddWord extends StatefulWidget {
   const AddWord({Key? key}) : super(key: key);
